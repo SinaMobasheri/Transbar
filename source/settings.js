@@ -3,7 +3,7 @@
 const Gio = imports.gi.Gio;
 const Extension = imports.misc.extensionUtils.getCurrentExtension();
 
-const SCHEMA_PATH = 'org.gnome.shell.extensions.fully-transparent-top-bar';
+const SCHEMA_PATH = 'org.gnome.shell.extensions.Transbar';
 
 function get_local_gsettings(schema_path) {
     const GioSSS = Gio.SettingsSchemaSource;
