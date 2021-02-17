@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8" ?>
 <schemalist>
-	<schema id="org.gnome.shell.extensions.fully-transparent-top-bar" path="/org/gnome/shell/extensions/fully-transparent-top-bar/">
+	<schema id="org.gnome.shell.extensions.Transbar" path="/org/gnome/shell/extensions/Transbar/">
 		<!-- BACKGROUND COLORS -->
 		<key type="s" name="background-active-color">
 			<default>"rgba(0,0,0,1.0)"</default>
