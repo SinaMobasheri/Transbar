@@ -2,31 +2,31 @@
 
 
 build:
-	glib-compile-schemas src/schemas
+	glib-compile-schemas source/schemas
 	mkdir -p build/
-	cp -r src/* build/
+	cp -r source/* build/
 	rm -f build/prefs.ui~
 
 
 build_pkg: build
 	mkdir -p pkg/
-	cd build/ && zip -r ../pkg/fully-transparent-top-bar@aunetx.zip .
+	cd build/ && zip -r ../pkg/Transbar@SinaMobasheri.zip .
 
 
 vm_test: build
-	rm -rf $(HOME)/Documents/shared/smart_topbar/fully-transparent-top-bar@aunetx
-	mkdir -p $(HOME)/Documents/shared/smart_topbar/fully-transparent-top-bar@aunetx
-	cp -r build/* $(HOME)/Documents/shared/smart_topbar/fully-transparent-top-bar@aunetx/
+	rm -rf $(HOME)/Documents/shared/Transbar/Transbar@SinaMobasheri
+	mkdir -p $(HOME)/Documents/shared/Transbar/Transbar@SinaMobasheri
+	cp -r build/* $(HOME)/Documents/shared/Transbar/Transbar@SinaMobasheri/
 
 
 install: build
-	rm -rf $(HOME)/.local/share/gnome-shell/extensions/fully-transparent-top-bar@aunetx
-	mkdir -p $(HOME)/.local/share/gnome-shell/extensions/fully-transparent-top-bar@aunetx
-	cp -r build/* $(HOME)/.local/share/gnome-shell/extensions/fully-transparent-top-bar@aunetx/
+	rm -rf $(HOME)/.local/share/gnome-shell/extensions/Transbar@SinaMobasheri
+	mkdir -p $(HOME)/.local/share/gnome-shell/extensions/Transbar@SinaMobasheri
+	cp -r build/* $(HOME)/.local/share/gnome-shell/extensions/Transbar@SinaMobasheri/
 
 
 remove:
-	rm -rf $(HOME)/.local/share/gnome-shell/extensions/fully-transparent-top-bar@aunetx
+	rm -rf $(HOME)/.local/share/gnome-shell/extensions/Transbar@SinaMobasheri
 
 
 clean:
